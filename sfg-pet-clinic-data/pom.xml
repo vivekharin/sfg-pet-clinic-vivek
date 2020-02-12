@@ -10,6 +10,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>sfg-pet-clinic-data</artifactId>
+
+    <properties>            <!-- Added to fix the main class issue spring boot 2.1 onwards -->
+        <spring-boot.repackage.skip>true</spring-boot.repackage.skip>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -44,7 +49,6 @@
     </dependencies>
 
     <build>
-        <pluginManagement>
             <plugins>
                 <plugin>
                     <groupId>org.springframework.boot</groupId>
@@ -61,7 +65,6 @@
                     </executions>
                 </plugin>
             </plugins>
-        </pluginManagement>
     </build>
 
 </project>
