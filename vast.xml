@@ -1,7 +1,3 @@
-<vmap:VMAP xmlns:vmap="http://www.iab.net/vmap-1.0" version="1.0">
-      <vmap:AdBreak breakType="linear" breakId="mypre" timeOffset="start">
-        <vmap:AdSource allowMultipleAds="true" followRedirects="true" id="1">
-          <vmap:VASTData>
             <VAST version="2.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="oxml.xsd">
               <Ad id="115571748">
                 <InLine>
@@ -35,12 +31,4 @@
                 </InLine>
               </Ad>
             </VAST>
-          </vmap:VASTData>
-        </vmap:AdSource>
-        <vmap:TrackingEvents>
-          <vmap:Tracking event="breakStart">
-            http://MyServer.com/breakstart.gif
-          </vmap:Tracking>
-        </vmap:TrackingEvents>
-      </vmap:AdBreak>
-    </vmap:VMAP>
+       
